@@ -13,4 +13,5 @@ A small project to analyze the program performance.
     make
     ```
 * Summary
-  * The performance of the version with sort is better than one without sort because of the branch prediction.
+  * The performance of the version with sort is better than one without sort because of the branch prediction (without compiler optimization).
+  * If we enable `-O2`, the result is reverse.
