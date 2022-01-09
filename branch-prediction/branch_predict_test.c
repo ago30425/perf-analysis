@@ -2,12 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-/******** Config the program ********/
-#define SORT_ARRAY
 #define ARRAY_SZIE (32 * 1024)
-/***********************************/
 
-#ifdef SORT_ARRAY
+#ifdef SORT
 static int cmpfunc (const void * a, const void * b)
 {
    return (*(int *)a - *(int *)b);
@@ -40,7 +37,7 @@ int main(void)
     }
 
     clock_gettime(CLOCK_MONOTONIC, &start_time);
-#ifdef SORT_ARRAY
+#ifdef SORT
     qsort(array, ARRAY_SZIE, sizeof(int), cmpfunc);
 #endif
 
