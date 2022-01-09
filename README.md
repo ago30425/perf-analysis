@@ -1,7 +1,7 @@
 # perf-analysis
 A small project to analyze the program performance.
 
-## branch_predict_test
+## branch-predict
 * The code is modified from [Why is processing a sorted array faster than processing an unsorted array?](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
 * Build
   * With sort 
